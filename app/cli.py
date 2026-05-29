@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from app.config.settings import settings
 from app.pipeline.runner import ReceiptPipeline
 
 
@@ -10,11 +11,18 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Local receipt to Excel automation")
     parser.add_argument("input", type=Path, help="Image file or directory of receipt images")
     parser.add_argument("--output", type=Path, default=Path("outputs/receipts.xlsx"))
+    parser.add_argument(
+        "--ocr-mode",
+        choices=["single_vl", "multi_model"],
+        help="Override RECEIPT_OCR_MODE for this run.",
+    )
     return parser
 
 
 def main() -> None:
     args = build_parser().parse_args()
+    if args.ocr_mode:
+        settings.ocr_mode = args.ocr_mode
     pipeline = ReceiptPipeline()
     results = pipeline.process_path(args.input, args.output)
     accepted = sum(result.status.value == "accepted" for result in results)

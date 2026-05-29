@@ -4,7 +4,7 @@ import time
 from pathlib import Path
 
 from app.models.schemas import ProcessingResult, ProcessingStatus, ReceiptRoute
-from app.pipeline.classify import ReceiptClassifier
+from app.pipeline.router import ReceiptRouter
 from app.pipeline.export_excel import export_results
 from app.pipeline.extract import StructuredExtractor
 from app.pipeline.ingest import discover_inputs, load_image
@@ -16,7 +16,7 @@ from app.pipeline.validate import validate_extraction
 
 class ReceiptPipeline:
     def __init__(self) -> None:
-        self.classifier = ReceiptClassifier()
+        self.router = ReceiptRouter()
         self.ocr = OCREngine()
         self.extractor = StructuredExtractor()
 
@@ -32,7 +32,7 @@ class ReceiptPipeline:
         document = None
         try:
             image = load_image(receipt_input)
-            classification = self.classifier.classify(image)
+            classification = self.router.route(image)
             processed = self._preprocess_for_route(image, classification.route)
             ocr_payload = self.ocr.run(processed, classification, receipt_input.source_path)
             document = normalize_document(receipt_input, classification, ocr_payload)

@@ -32,6 +32,11 @@ class OCREngine:
         classification: ClassificationResult,
         source_path: Path | None = None,
     ) -> OCRPayload:
+        if settings.ocr_mode == "single_vl":
+            if not settings.enable_vl:
+                raise RuntimeError("single_vl mode requires RECEIPT_ENABLE_VL=true.")
+            return self._run_paddle_vl(image, source_path)
+
         vl_routes = {ReceiptRoute.HANDWRITTEN, ReceiptRoute.MIXED}
         if settings.paddle_vl_for_unknown_route:
             vl_routes.add(ReceiptRoute.UNKNOWN)
@@ -71,10 +76,18 @@ class OCREngine:
 
     def _run_paddle_vl(self, image: Image.Image, source_path: Path | None) -> OCRPayload:
         try:
+            import paddle  # noqa: F401  # type: ignore
+        except Exception as exc:
+            raise RuntimeError(
+                "PaddleOCR-VL requires paddlepaddle. Install it with: "
+                'python -m pip install "paddlepaddle>=3.2.1"'
+            ) from exc
+
+        try:
             from paddleocr import PaddleOCRVL  # type: ignore
         except Exception as exc:
             raise RuntimeError(
-                "PaddleOCR-VL is not installed. Install paddleocr[doc-parser] and enable VL again."
+                'PaddleOCR-VL is not installed. Install it with: python -m pip install -U "paddleocr[doc-parser]"'
             ) from exc
 
         if self._vl is None:

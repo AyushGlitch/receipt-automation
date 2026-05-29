@@ -12,8 +12,12 @@ python-dateutil>=2.9
 # paddleocr[doc-parser]>=3.0
 # paddlepaddle>=3.2.1
 
-# Optional Apple/Core ML classifier support.
-# coremltools>=7.2
+# Optional CLIP router for RECEIPT_OCR_MODE=multi_model.
+# python -m pip install -U transformers torch accelerate safetensors
+# transformers>=4.45
+# torch>=2.4
+# accelerate>=0.34
+# safetensors>=0.4
 
 # Optional structured extraction LLM support for the Unsloth Qwen GGUF model.
 # For Apple Silicon Metal, install with:

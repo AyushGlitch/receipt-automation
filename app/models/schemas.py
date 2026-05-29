@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import date, datetime
+from datetime import date as Date, datetime
 from enum import StrEnum
 from pathlib import Path
 from typing import Any
@@ -124,7 +124,7 @@ class ReceiptExtraction(BaseModel):
     receipt_id: str
     source_path: Path
     merchant_name: str | None = None
-    date: date | None = None
+    date: Date | None = None
     currency: str | None = None
     subtotal: float | None = None
     tax: float | None = None

@@ -8,3 +8,5 @@ logs/*.log
 models/*.gguf
 models/*.mlpackage
 models/*.mlmodel
+*.gguf
+data/

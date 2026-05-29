@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Literal
 
 from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -14,22 +15,10 @@ class Settings(BaseSettings):
     output_dir: Path = Path("outputs")
     log_dir: Path = Path("logs")
 
-    classifier_model_path: Path = Path("models/mobilevit_xxs_receipt.mlpackage")
-    classifier_input_name: str = "image"
-    classifier_input_type: str = "image"
-    classifier_image_size: int = 256
-    classifier_labels: list[str] = Field(
-        default_factory=lambda: [
-            "printed_receipt",
-            "handwritten_receipt",
-            "mixed_receipt",
-            "invoice",
-            "non_receipt",
-            "low_quality",
-        ]
-    )
-    classifier_mean: tuple[float, float, float] = (0.485, 0.456, 0.406)
-    classifier_std: tuple[float, float, float] = (0.229, 0.224, 0.225)
+    ocr_mode: Literal["single_vl", "multi_model"] = "single_vl"
+    enable_clip_router: bool = True
+    clip_model_name: str = "openai/clip-vit-base-patch32"
+    clip_min_confidence: float = 0.34
     qwen_model_path: Path = Path("models/unsloth-qwen3.5-2b-ud-q4_k_xl.gguf")
 
     max_image_long_edge: int = 2200
@@ -37,10 +26,10 @@ class Settings(BaseSettings):
     llm_gpu_layers: int = -1
     llm_temperature: float = 0.1
 
-    enable_classifier: bool = True
+    enable_classifier: bool = False
     enable_paddleocr: bool = True
     enable_llm: bool = True
-    enable_vl: bool = False
+    enable_vl: bool = True
 
     paddle_vl_pipeline_version: str = "v1.6"
     paddle_vl_device: str = "cpu"
