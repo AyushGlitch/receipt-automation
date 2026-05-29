@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+outputs/*.xlsx
+logs/*.log
+models/*.gguf
+models/*.mlpackage
+models/*.mlmodel

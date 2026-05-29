@@ -1,0 +1,21 @@
+pydantic>=2.7
+pydantic-settings>=2.2
+pillow>=10.0
+opencv-python>=4.9
+numpy>=1.26
+openpyxl>=3.1
+python-dateutil>=2.9
+
+# Optional PP-OCR + PaddleOCR-VL document parser stack.
+# For PaddleOCR-VL 1.6, the official docs use:
+# python -m pip install -U "paddleocr[doc-parser]"
+# paddleocr[doc-parser]>=3.0
+# paddlepaddle>=3.2.1
+
+# Optional Apple/Core ML classifier support.
+# coremltools>=7.2
+
+# Optional structured extraction LLM support for the Unsloth Qwen GGUF model.
+# For Apple Silicon Metal, install with:
+# CMAKE_ARGS="-DGGML_METAL=on" python -m pip install llama-cpp-python
+# llama-cpp-python>=0.2.80
