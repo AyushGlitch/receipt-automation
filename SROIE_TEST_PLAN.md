@@ -112,10 +112,20 @@ Run the pipeline on the downloaded sample.
 
 ### Single VL Mode
 
-This sends every receipt to PaddleOCR-VL 1.6:
+This sends every receipt to PaddleOCR-VL 1.6. Test one receipt first because CPU inference can be slow:
 
 ```bash
-python -m app.cli data/sroie_sample \
+mkdir -p data/debug
+cp data/sroie_sample/sroie_0000.jpg data/debug/
+PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True python -m app.cli data/debug \
+  --ocr-mode single_vl \
+  --output outputs/debug_one.xlsx
+```
+
+Then run the sample batch:
+
+```bash
+PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True python -m app.cli data/sroie_sample \
   --ocr-mode single_vl \
   --output outputs/sroie_single_vl.xlsx
 ```
@@ -363,4 +373,32 @@ For handwritten testing, add your own small set later:
 10 handwritten receipts
 10 mixed receipts
 10 low-quality phone photos
+```
+
+## 13. Long Running PaddleOCR-VL Notes
+
+PaddleOCR-VL on CPU may show high CPU usage without printing logs for a while. The pipeline now prints progress per receipt and writes the workbook incrementally after each processed receipt.
+
+If progress appears stuck, test one image first:
+
+```bash
+mkdir -p data/debug
+cp data/sroie_sample/sroie_0000.jpg data/debug/
+PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True python -m app.cli data/debug \
+  --ocr-mode single_vl \
+  --output outputs/debug_one.xlsx
+```
+
+Recommended M4 Air setting:
+
+```env
+RECEIPT_MAX_IMAGE_LONG_EDGE=1600
+```
+
+If it is still too slow, temporarily lower it:
+
+```bash
+RECEIPT_MAX_IMAGE_LONG_EDGE=1200 PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True python -m app.cli data/debug \
+  --ocr-mode single_vl \
+  --output outputs/debug_one_1200.xlsx
 ```

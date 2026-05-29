@@ -19,9 +19,12 @@ class Settings(BaseSettings):
     enable_clip_router: bool = True
     clip_model_name: str = "openai/clip-vit-base-patch32"
     clip_min_confidence: float = 0.34
-    qwen_model_path: Path = Path("models/unsloth-qwen3.5-2b-ud-q4_k_xl.gguf")
+    qwen_model_path: Path = Path("models/qwen3.5-2b-gguf/Qwen3.5-2B-UD-Q4_K_XL.gguf")
 
-    max_image_long_edge: int = 2200
+    max_image_long_edge: int = 1600
+    export_incremental: bool = True
+    debug_artifacts: bool = True
+    debug_dir: Path = Path("outputs/debug_artifacts")
     llm_context_size: int = 4096
     llm_gpu_layers: int = -1
     llm_temperature: float = 0.1

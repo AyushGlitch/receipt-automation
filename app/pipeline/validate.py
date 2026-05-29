@@ -22,6 +22,7 @@ def validate_extraction(extraction: ReceiptExtraction) -> ReceiptExtraction:
             extraction.warnings.append("total_suspiciously_low")
             extraction.needs_review = True
 
+    extraction.warnings = list(dict.fromkeys(extraction.warnings))
     return extraction
 
 

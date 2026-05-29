@@ -1,0 +1,973 @@
+{
+  "receipt_id": "ee2665708511466c82a8226d8b634022",
+  "source_path": "data/sroie_sample/sroie_0000.jpg",
+  "ocr_engine": "paddleocr_vl_1.6",
+  "document_confidence": 0.75,
+  "raw_text": "tan chay yee\n*****COPY*****\nOJC MARKETING SDN BHD\nROC NO: 538358-H\nNO 2 & 4, JALAN BAYU 4,\nBANDAR SERI ALAM.\n81750 MASAI, JOHOR\nTel:07-388 2218 Fax:07-388 8218\nEmail: ng@ojcgroup.com\nTAX INVOICE\nInvoice No : PEGIV-1030765\nDate : 15/01/2019 11:05:16 AM\nCashier : NG CHUAN MIN\nSales Persor : FATIN\nBill To : THE PEAK QUARRY WORKS\nAddress :.\nDescription Qty Price Amount\n000000111 1 193.00 193.00 SR\nKINGS SAFETY SHOES KWD 805\n<table><tr><td>Qty: 1</td><td>Total Exclude GST:</td><td>193.00</td></tr><tr><td></td><td>Total GST @6%:</td><td>0.00</td></tr><tr><td></td><td>Total Inclusive GST:</td><td>193.00</td></tr><tr><td></td><td>Round Amt:</td><td>0.00</td></tr><tr><td></td><td>TOTAL:</td><td>193.00</td></tr><tr><td></td><td>VISA CARD</td><td>193.00</td></tr><tr><td></td><td>xxxxxxxxxxxx4318</td><td></td></tr><tr><td></td><td>Approval Code:000</td><td></td></tr></table>\nGoods Sold Are Not Returnable & Refundable\n****Thank You. Please Come Again.****",
+  "lines": [
+    {
+      "text": "tan chay yee",
+      "tokens": [
+        {
+          "text": "tan chay yee",
+          "bbox": {
+            "x1": 100.0,
+            "y1": 24.0,
+            "x2": 312.0,
+            "y2": 68.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 100.0,
+        "y1": 24.0,
+        "x2": 312.0,
+        "y2": 68.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "*****COPY*****",
+      "tokens": [
+        {
+          "text": "*****COPY*****",
+          "bbox": {
+            "x1": 138.0,
+            "y1": 96.0,
+            "x2": 274.0,
+            "y2": 117.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 138.0,
+        "y1": 96.0,
+        "x2": 274.0,
+        "y2": 117.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "OJC MARKETING SDN BHD",
+      "tokens": [
+        {
+          "text": "OJC MARKETING SDN BHD",
+          "bbox": {
+            "x1": 85.0,
+            "y1": 118.0,
+            "x2": 328.0,
+            "y2": 141.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 85.0,
+        "y1": 118.0,
+        "x2": 328.0,
+        "y2": 141.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "ROC NO: 538358-H",
+      "tokens": [
+        {
+          "text": "ROC NO: 538358-H",
+          "bbox": {
+            "x1": 127.0,
+            "y1": 142.0,
+            "x2": 288.0,
+            "y2": 163.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 127.0,
+        "y1": 142.0,
+        "x2": 288.0,
+        "y2": 163.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "NO 2 & 4, JALAN BAYU 4,",
+      "tokens": [
+        {
+          "text": "NO 2 & 4, JALAN BAYU 4,",
+          "bbox": {
+            "x1": 108.0,
+            "y1": 164.0,
+            "x2": 305.0,
+            "y2": 185.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 108.0,
+        "y1": 164.0,
+        "x2": 305.0,
+        "y2": 185.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "BANDAR SERI ALAM.",
+      "tokens": [
+        {
+          "text": "BANDAR SERI ALAM.",
+          "bbox": {
+            "x1": 125.0,
+            "y1": 186.0,
+            "x2": 289.0,
+            "y2": 206.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 125.0,
+        "y1": 186.0,
+        "x2": 289.0,
+        "y2": 206.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "81750 MASAI, JOHOR",
+      "tokens": [
+        {
+          "text": "81750 MASAI, JOHOR",
+          "bbox": {
+            "x1": 121.0,
+            "y1": 207.0,
+            "x2": 293.0,
+            "y2": 227.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 121.0,
+        "y1": 207.0,
+        "x2": 293.0,
+        "y2": 227.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Tel:07-388 2218 Fax:07-388 8218",
+      "tokens": [
+        {
+          "text": "Tel:07-388 2218 Fax:07-388 8218",
+          "bbox": {
+            "x1": 72.0,
+            "y1": 227.0,
+            "x2": 338.0,
+            "y2": 249.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 72.0,
+        "y1": 227.0,
+        "x2": 338.0,
+        "y2": 249.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Email: ng@ojcgroup.com",
+      "tokens": [
+        {
+          "text": "Email: ng@ojcgroup.com",
+          "bbox": {
+            "x1": 111.0,
+            "y1": 250.0,
+            "x2": 303.0,
+            "y2": 272.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 111.0,
+        "y1": 250.0,
+        "x2": 303.0,
+        "y2": 272.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "TAX INVOICE",
+      "tokens": [
+        {
+          "text": "TAX INVOICE",
+          "bbox": {
+            "x1": 147.0,
+            "y1": 291.0,
+            "x2": 267.0,
+            "y2": 312.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 147.0,
+        "y1": 291.0,
+        "x2": 267.0,
+        "y2": 312.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Invoice No : PEGIV-1030765",
+      "tokens": [
+        {
+          "text": "Invoice No : PEGIV-1030765",
+          "bbox": {
+            "x1": 26.0,
+            "y1": 324.0,
+            "x2": 255.0,
+            "y2": 345.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 26.0,
+        "y1": 324.0,
+        "x2": 255.0,
+        "y2": 345.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Date : 15/01/2019 11:05:16 AM",
+      "tokens": [
+        {
+          "text": "Date : 15/01/2019 11:05:16 AM",
+          "bbox": {
+            "x1": 26.0,
+            "y1": 346.0,
+            "x2": 328.0,
+            "y2": 367.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 26.0,
+        "y1": 346.0,
+        "x2": 328.0,
+        "y2": 367.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Cashier : NG CHUAN MIN",
+      "tokens": [
+        {
+          "text": "Cashier : NG CHUAN MIN",
+          "bbox": {
+            "x1": 26.0,
+            "y1": 368.0,
+            "x2": 254.0,
+            "y2": 388.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 26.0,
+        "y1": 368.0,
+        "x2": 254.0,
+        "y2": 388.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Sales Persor : FATIN",
+      "tokens": [
+        {
+          "text": "Sales Persor : FATIN",
+          "bbox": {
+            "x1": 26.0,
+            "y1": 390.0,
+            "x2": 182.0,
+            "y2": 409.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 26.0,
+        "y1": 390.0,
+        "x2": 182.0,
+        "y2": 409.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Bill To : THE PEAK QUARRY WORKS",
+      "tokens": [
+        {
+          "text": "Bill To : THE PEAK QUARRY WORKS",
+          "bbox": {
+            "x1": 26.0,
+            "y1": 410.0,
+            "x2": 369.0,
+            "y2": 432.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 26.0,
+        "y1": 410.0,
+        "x2": 369.0,
+        "y2": 432.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Address :.",
+      "tokens": [
+        {
+          "text": "Address :.",
+          "bbox": {
+            "x1": 25.0,
+            "y1": 443.0,
+            "x2": 140.0,
+            "y2": 464.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 25.0,
+        "y1": 443.0,
+        "x2": 140.0,
+        "y2": 464.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Description Qty Price Amount\n000000111 1 193.00 193.00 SR",
+      "tokens": [
+        {
+          "text": "Description Qty Price Amount\n000000111 1 193.00 193.00 SR",
+          "bbox": {
+            "x1": 15.0,
+            "y1": 526.0,
+            "x2": 393.0,
+            "y2": 569.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 15.0,
+        "y1": 526.0,
+        "x2": 393.0,
+        "y2": 569.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "KINGS SAFETY SHOES KWD 805",
+      "tokens": [
+        {
+          "text": "KINGS SAFETY SHOES KWD 805",
+          "bbox": {
+            "x1": 23.0,
+            "y1": 573.0,
+            "x2": 259.0,
+            "y2": 595.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 23.0,
+        "y1": 573.0,
+        "x2": 259.0,
+        "y2": 595.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "<table><tr><td>Qty: 1</td><td>Total Exclude GST:</td><td>193.00</td></tr><tr><td></td><td>Total GST @6%:</td><td>0.00</td></tr><tr><td></td><td>Total Inclusive GST:</td><td>193.00</td></tr><tr><td></td><td>Round Amt:</td><td>0.00</td></tr><tr><td></td><td>TOTAL:</td><td>193.00</td></tr><tr><td></td><td>VISA CARD</td><td>193.00</td></tr><tr><td></td><td>xxxxxxxxxxxx4318</td><td></td></tr><tr><td></td><td>Approval Code:000</td><td></td></tr></table>",
+      "tokens": [
+        {
+          "text": "<table><tr><td>Qty: 1</td><td>Total Exclude GST:</td><td>193.00</td></tr><tr><td></td><td>Total GST @6%:</td><td>0.00</td></tr><tr><td></td><td>Total Inclusive GST:</td><td>193.00</td></tr><tr><td></td><td>Round Amt:</td><td>0.00</td></tr><tr><td></td><td>TOTAL:</td><td>193.00</td></tr><tr><td></td><td>VISA CARD</td><td>193.00</td></tr><tr><td></td><td>xxxxxxxxxxxx4318</td><td></td></tr><tr><td></td><td>Approval Code:000</td><td></td></tr></table>",
+          "bbox": {
+            "x1": 14.0,
+            "y1": 608.0,
+            "x2": 403.0,
+            "y2": 826.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 14.0,
+        "y1": 608.0,
+        "x2": 403.0,
+        "y2": 826.0
+      },
+      "confidence": 0.75
+    },
+    {
+      "text": "Goods Sold Are Not Returnable & Refundable\n****Thank You. Please Come Again.****",
+      "tokens": [
+        {
+          "text": "Goods Sold Are Not Returnable & Refundable\n****Thank You. Please Come Again.****",
+          "bbox": {
+            "x1": 31.0,
+            "y1": 844.0,
+            "x2": 372.0,
+            "y2": 886.0
+          },
+          "confidence": 0.75
+        }
+      ],
+      "bbox": {
+        "x1": 31.0,
+        "y1": 844.0,
+        "x2": 372.0,
+        "y2": 886.0
+      },
+      "confidence": 0.75
+    }
+  ],
+  "candidates": {
+    "merchant": [
+      "tan chay yee",
+      "*****COPY*****",
+      "OJC MARKETING SDN BHD"
+    ],
+    "dates": [
+      "15/01/2019"
+    ],
+    "amounts": [
+      "538358",
+      "2",
+      "4",
+      "81750",
+      "07",
+      "-388 221",
+      "8",
+      "-388 821",
+      "-103076",
+      "5",
+      "15",
+      "01",
+      "2019",
+      "11",
+      "05",
+      "16",
+      "000000",
+      "111",
+      "1 193.00",
+      "193.00",
+      "805",
+      "1",
+      "6",
+      "0.00",
+      "4318",
+      "000"
+    ],
+    "totals": [
+      "1",
+      "193.00",
+      "6",
+      "0.00",
+      "4318",
+      "000"
+    ],
+    "taxes": [
+      "1",
+      "193.00",
+      "6",
+      "0.00",
+      "4318",
+      "000"
+    ],
+    "subtotals": []
+  },
+  "key_values": [
+    {
+      "key": "total",
+      "value": "000",
+      "confidence": 0.75,
+      "bbox": {
+        "x1": 14.0,
+        "y1": 608.0,
+        "x2": 403.0,
+        "y2": 826.0
+      }
+    }
+  ],
+  "ocr_metadata": {
+    "result_count": 1,
+    "raw_data": [
+      {
+        "input_path": "/var/folders/nt/zbg7bx091zs5cyr6hlz_zdlm0000gn/T/receipt-vl-vijhm2dm.png",
+        "page_index": null,
+        "page_count": null,
+        "width": 463,
+        "height": 894,
+        "doc_preprocessor_res": {
+          "output_img": "[[[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n ...\n\n [[240 240 240]\n  [238 238 238]\n  [246 246 246]\n  ...\n  [252 252 252]\n  [253 253 253]\n  [253 253 253]]\n\n [[245 245 245]\n  [241 241 241]\n  [247 247 247]\n  ...\n  [252 252 252]\n  [254 254 254]\n  [254 254 254]]\n\n [[239 239 239]\n  [236 236 236]\n  [243 243 243]\n  ...\n  [252 252 252]\n  [255 255 255]\n  [255 255 255]]]"
+        },
+        "layout_det_res": {
+          "input_path": null,
+          "page_index": null,
+          "input_img": "[[[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n [[255 255 255]\n  [255 255 255]\n  [255 255 255]\n  ...\n  [255 255 255]\n  [255 255 255]\n  [255 255 255]]\n\n ...\n\n [[240 240 240]\n  [238 238 238]\n  [246 246 246]\n  ...\n  [252 252 252]\n  [253 253 253]\n  [253 253 253]]\n\n [[245 245 245]\n  [241 241 241]\n  [247 247 247]\n  ...\n  [252 252 252]\n  [254 254 254]\n  [254 254 254]]\n\n [[239 239 239]\n  [236 236 236]\n  [243 243 243]\n  ...\n  [252 252 252]\n  [255 255 255]\n  [255 255 255]]]",
+          "boxes": [
+            {
+              "cls_id": 17,
+              "label": "paragraph_title",
+              "score": 0.5540183186531067,
+              "coordinate": [
+                100,
+                24,
+                312,
+                68
+              ],
+              "order": 1,
+              "polygon_points": "[[100.  24.]\n [312.  24.]\n [312.  68.]\n [100.  68.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.6351428031921387,
+              "coordinate": [
+                138,
+                96,
+                274,
+                117
+              ],
+              "order": 2,
+              "polygon_points": "[[138.  96.]\n [273.  96.]\n [273. 116.]\n [138. 116.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.7114487290382385,
+              "coordinate": [
+                85,
+                118,
+                328,
+                141
+              ],
+              "order": 3,
+              "polygon_points": "[[ 85. 118.]\n [328. 118.]\n [328. 141.]\n [ 85. 141.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.7102365493774414,
+              "coordinate": [
+                127,
+                142,
+                288,
+                163
+              ],
+              "order": 4,
+              "polygon_points": "[[127. 142.]\n [287. 142.]\n [287. 162.]\n [127. 162.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.7022300362586975,
+              "coordinate": [
+                108,
+                164,
+                305,
+                185
+              ],
+              "order": 5,
+              "polygon_points": "[[108. 164.]\n [304. 164.]\n [304. 184.]\n [108. 184.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.6675862073898315,
+              "coordinate": [
+                125,
+                186,
+                289,
+                206
+              ],
+              "order": 6,
+              "polygon_points": "[[125. 186.]\n [288. 186.]\n [288. 205.]\n [125. 205.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.6631365418434143,
+              "coordinate": [
+                121,
+                207,
+                293,
+                227
+              ],
+              "order": 7,
+              "polygon_points": "[[121.      207.     ]\n [289.99997 207.     ]\n [289.99997 226.     ]\n [121.      226.     ]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.707323431968689,
+              "coordinate": [
+                72,
+                227,
+                338,
+                249
+              ],
+              "order": 8,
+              "polygon_points": "[[ 72. 227.]\n [338. 227.]\n [338. 249.]\n [ 72. 249.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.6946181058883667,
+              "coordinate": [
+                111,
+                250,
+                303,
+                272
+              ],
+              "order": 9,
+              "polygon_points": "[[111. 250.]\n [302. 250.]\n [302. 271.]\n [111. 271.]]"
+            },
+            {
+              "cls_id": 17,
+              "label": "paragraph_title",
+              "score": 0.7806246876716614,
+              "coordinate": [
+                147,
+                291,
+                267,
+                312
+              ],
+              "order": 10,
+              "polygon_points": "[[147. 291.]\n [266. 291.]\n [266. 311.]\n [147. 311.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.5679919719696045,
+              "coordinate": [
+                26,
+                324,
+                255,
+                345
+              ],
+              "order": 11,
+              "polygon_points": "[[ 26. 324.]\n [254. 324.]\n [254. 344.]\n [ 26. 344.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.7113492488861084,
+              "coordinate": [
+                26,
+                346,
+                328,
+                367
+              ],
+              "order": 12,
+              "polygon_points": "[[ 26. 346.]\n [327. 346.]\n [327. 366.]\n [ 26. 366.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.7305168509483337,
+              "coordinate": [
+                26,
+                368,
+                254,
+                388
+              ],
+              "order": 13,
+              "polygon_points": "[[ 26. 368.]\n [253. 368.]\n [253. 387.]\n [ 26. 387.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.6704972386360168,
+              "coordinate": [
+                26,
+                390,
+                182,
+                409
+              ],
+              "order": 14,
+              "polygon_points": "[[ 26. 390.]\n [181. 390.]\n [181. 408.]\n [ 26. 408.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.6196581721305847,
+              "coordinate": [
+                26,
+                410,
+                369,
+                432
+              ],
+              "order": 15,
+              "polygon_points": "[[ 26. 410.]\n [369. 410.]\n [369. 432.]\n [ 26. 432.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.641849160194397,
+              "coordinate": [
+                25,
+                443,
+                140,
+                464
+              ],
+              "order": 16,
+              "polygon_points": "[[ 25. 443.]\n [139. 443.]\n [139. 463.]\n [ 25. 463.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.34833240509033203,
+              "coordinate": [
+                23,
+                527,
+                360,
+                550
+              ],
+              "order": 17,
+              "polygon_points": "[[ 23. 527.]\n [360. 527.]\n [360. 550.]\n [ 23. 550.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.4449235498905182,
+              "coordinate": [
+                15,
+                526,
+                393,
+                569
+              ],
+              "order": 18,
+              "polygon_points": "[[ 15. 526.]\n [393. 526.]\n [393. 569.]\n [ 15. 569.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.33128905296325684,
+              "coordinate": [
+                23,
+                549,
+                384,
+                569
+              ],
+              "order": 19,
+              "polygon_points": "[[ 23. 549.]\n [ 23. 568.]\n [383. 568.]\n [383. 549.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.632737934589386,
+              "coordinate": [
+                23,
+                573,
+                259,
+                595
+              ],
+              "order": 20,
+              "polygon_points": "[[ 23. 573.]\n [259. 573.]\n [259. 595.]\n [ 23. 595.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.3650987446308136,
+              "coordinate": [
+                28,
+                612,
+                359,
+                633
+              ],
+              "order": 21,
+              "polygon_points": "[[ 28.00003 611.99994]\n [357.99997 611.99994]\n [357.99997 631.99994]\n [ 28.00003 631.99994]]"
+            },
+            {
+              "cls_id": 21,
+              "label": "table",
+              "score": 0.41975024342536926,
+              "coordinate": [
+                14,
+                608,
+                403,
+                826
+              ],
+              "order": null,
+              "polygon_points": "[[ 14. 608.]\n [403. 608.]\n [403. 826.]\n [ 14. 826.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.45365312695503235,
+              "coordinate": [
+                121,
+                633,
+                359,
+                653
+              ],
+              "order": 22,
+              "polygon_points": "[[121. 638.]\n [121. 652.]\n [358. 652.]\n [358. 633.]\n [124. 633.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.4279163181781769,
+              "coordinate": [
+                99,
+                654,
+                359,
+                675
+              ],
+              "order": 23,
+              "polygon_points": "[[ 99. 654.]\n [358. 654.]\n [358. 674.]\n [ 99. 674.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.5426132082939148,
+              "coordinate": [
+                160,
+                675,
+                359,
+                698
+              ],
+              "order": 24,
+              "polygon_points": "[[160. 675.]\n [359. 675.]\n [359. 698.]\n [160. 698.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.6001208424568176,
+              "coordinate": [
+                173,
+                699,
+                359,
+                721
+              ],
+              "order": 25,
+              "polygon_points": "[[173. 699.]\n [358. 699.]\n [358. 720.]\n [173. 720.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.4706468880176544,
+              "coordinate": [
+                144,
+                729,
+                360,
+                748
+              ],
+              "order": 26,
+              "polygon_points": "[[144. 729.]\n [357. 729.]\n [357. 747.]\n [144. 747.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.4795894920825958,
+              "coordinate": [
+                91,
+                751,
+                233,
+                769
+              ],
+              "order": 27,
+              "polygon_points": "[[ 90.999985 750.99994 ]\n [231.99995  750.99994 ]\n [231.99995  767.99994 ]\n [ 90.999985 767.99994 ]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.5072422027587891,
+              "coordinate": [
+                86,
+                771,
+                233,
+                792
+              ],
+              "order": 28,
+              "polygon_points": "[[ 86. 771.]\n [232. 771.]\n [232. 791.]\n [ 86. 791.]]"
+            },
+            {
+              "cls_id": 22,
+              "label": "text",
+              "score": 0.6830242872238159,
+              "coordinate": [
+                31,
+                844,
+                372,
+                886
+              ],
+              "order": 29,
+              "polygon_points": "[[ 31. 844.]\n [372. 844.]\n [372. 886.]\n [ 31. 886.]]"
+            }
+          ]
+        },
+        "table_res_list": [],
+        "parsing_res_list": [
+          "\n\n#################\nlabel:\tparagraph_title\nbbox:\t[100, 24, 312, 68]\ncontent:\ttan chay yee\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[138, 96, 274, 117]\ncontent:\t*****COPY*****\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[85, 118, 328, 141]\ncontent:\tOJC MARKETING SDN BHD\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[127, 142, 288, 163]\ncontent:\tROC NO: 538358-H\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[108, 164, 305, 185]\ncontent:\tNO 2 & 4, JALAN BAYU 4,\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[125, 186, 289, 206]\ncontent:\tBANDAR SERI ALAM.\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[121, 207, 293, 227]\ncontent:\t81750 MASAI, JOHOR\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[72, 227, 338, 249]\ncontent:\tTel:07-388 2218 Fax:07-388 8218\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[111, 250, 303, 272]\ncontent:\tEmail: ng@ojcgroup.com\n#################",
+          "\n\n#################\nlabel:\tparagraph_title\nbbox:\t[147, 291, 267, 312]\ncontent:\tTAX INVOICE\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[26, 324, 255, 345]\ncontent:\tInvoice No : PEGIV-1030765\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[26, 346, 328, 367]\ncontent:\tDate : 15/01/2019 11:05:16 AM\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[26, 368, 254, 388]\ncontent:\tCashier : NG CHUAN MIN\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[26, 390, 182, 409]\ncontent:\tSales Persor : FATIN\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[26, 410, 369, 432]\ncontent:\tBill To : THE PEAK QUARRY WORKS\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[25, 443, 140, 464]\ncontent:\tAddress :.\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[15, 526, 393, 569]\ncontent:\tDescription Qty Price Amount\n000000111 1 193.00 193.00 SR\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[23, 573, 259, 595]\ncontent:\tKINGS SAFETY SHOES KWD 805\n#################",
+          "\n\n#################\nlabel:\ttable\nbbox:\t[14, 608, 403, 826]\ncontent:\t<table><tr><td>Qty: 1</td><td>Total Exclude GST:</td><td>193.00</td></tr><tr><td></td><td>Total GST @6%:</td><td>0.00</td></tr><tr><td></td><td>Total Inclusive GST:</td><td>193.00</td></tr><tr><td></td><td>Round Amt:</td><td>0.00</td></tr><tr><td></td><td>TOTAL:</td><td>193.00</td></tr><tr><td></td><td>VISA CARD</td><td>193.00</td></tr><tr><td></td><td>xxxxxxxxxxxx4318</td><td></td></tr><tr><td></td><td>Approval Code:000</td><td></td></tr></table>\n#################",
+          "\n\n#################\nlabel:\ttext\nbbox:\t[31, 844, 372, 886]\ncontent:\tGoods Sold Are Not Returnable & Refundable\n****Thank You. Please Come Again.****\n#################"
+        ],
+        "spotting_res": {},
+        "imgs_in_doc": [],
+        "model_settings": {
+          "use_doc_preprocessor": false,
+          "use_layout_detection": true,
+          "use_chart_recognition": false,
+          "use_seal_recognition": false,
+          "use_ocr_for_image_block": false,
+          "format_block_content": false,
+          "merge_layout_blocks": true,
+          "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+          ],
+          "return_layout_polygon_points": true
+        }
+      }
+    ]
+  }
+}

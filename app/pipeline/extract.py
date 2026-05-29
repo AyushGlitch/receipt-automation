@@ -52,13 +52,28 @@ class StructuredExtractor:
             self._load_llm()
         assert self._llm is not None
         prompt = build_extraction_prompt(document)
-        response = self._llm(
-            prompt,
-            max_tokens=900,
-            temperature=settings.llm_temperature,
-            stop=["</json>", "<|end|>"],
-        )
-        raw = response["choices"][0]["text"]
+        try:
+            response = self._llm.create_chat_completion(
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You extract receipt fields and return strict JSON only.",
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+                temperature=settings.llm_temperature,
+                max_tokens=900,
+                response_format={"type": "json_object"},
+            )
+            raw = response["choices"][0]["message"]["content"]
+        except Exception:
+            response = self._llm(
+                prompt,
+                max_tokens=900,
+                temperature=settings.llm_temperature,
+                stop=["</json>", "<|end|>"],
+            )
+            raw = response["choices"][0]["text"]
         payload = parse_json_object(raw)
         payload.setdefault("receipt_id", document.receipt_id)
         payload.setdefault("source_path", document.source_path)
@@ -78,7 +93,7 @@ class StructuredExtractor:
         return ReceiptExtraction(
             receipt_id=document.receipt_id,
             source_path=document.source_path,
-            merchant_name=merchant_candidates[0] if merchant_candidates else None,
+            merchant_name=choose_merchant(merchant_candidates),
             date=parsed_date,
             currency=infer_currency(document.raw_text),
             subtotal=subtotal,
@@ -155,3 +170,16 @@ def last_value(values: list[str] | None) -> str | None:
     if not values:
         return None
     return values[-1]
+
+
+def choose_merchant(candidates: list[str]) -> str | None:
+    ignored = {"copy", "*****copy*****", "tax invoice", "invoice", "receipt"}
+    cleaned = [candidate.strip() for candidate in candidates if candidate and candidate.strip().lower() not in ignored]
+    if not cleaned:
+        return None
+    company_markers = ("sdn", "bhd", "ltd", "llc", "inc", "pvt", "limited", "marketing")
+    for candidate in cleaned:
+        lowered = candidate.lower()
+        if any(marker in lowered for marker in company_markers):
+            return candidate
+    return cleaned[0]

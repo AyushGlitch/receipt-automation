@@ -232,14 +232,14 @@ HF_HUB_ENABLE_HF_TRANSFER=1 hf download unsloth/Qwen3.5-2B-GGUF \
 Then either update `.env` to the downloaded file path, or move/rename the file to:
 
 ```text
-models/unsloth-qwen3.5-2b-ud-q4_k_xl.gguf
+models/qwen3.5-2b-gguf/Qwen3.5-2B-UD-Q4_K_XL.gguf
 ```
 
 Required `.env` setting:
 
 ```env
 RECEIPT_ENABLE_LLM=true
-RECEIPT_QWEN_MODEL_PATH=models/unsloth-qwen3.5-2b-ud-q4_k_xl.gguf
+RECEIPT_QWEN_MODEL_PATH=models/qwen3.5-2b-gguf/Qwen3.5-2B-UD-Q4_K_XL.gguf
 RECEIPT_LLM_CONTEXT_SIZE=4096
 RECEIPT_LLM_GPU_LAYERS=-1
 RECEIPT_LLM_TEMPERATURE=0.1
@@ -274,8 +274,18 @@ Supported image types:
 
 ## 10. Run The Pipeline
 
+For PaddleOCR-VL, start with one receipt first. CPU inference can be slow on the M4 Air:
+
 ```bash
-python -m app.cli data/inbox --output outputs/receipts.xlsx
+mkdir -p data/debug
+cp data/inbox/your_receipt.jpg data/debug/
+PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True python -m app.cli data/debug --ocr-mode single_vl --output outputs/debug_one.xlsx
+```
+
+Then run the full inbox:
+
+```bash
+PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True python -m app.cli data/inbox --output outputs/receipts.xlsx
 ```
 
 Override OCR mode for one run:
@@ -311,7 +321,7 @@ Start with:
 
 ```env
 RECEIPT_OCR_MODE=single_vl
-RECEIPT_MAX_IMAGE_LONG_EDGE=2200
+RECEIPT_MAX_IMAGE_LONG_EDGE=1600
 RECEIPT_ENABLE_VL=true
 RECEIPT_PADDLE_VL_DEVICE=cpu
 RECEIPT_PADDLE_VL_MAX_CONCURRENCY=1

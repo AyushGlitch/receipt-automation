@@ -2,7 +2,7 @@
 
 Place local model artifacts here:
 
-- `unsloth-qwen3.5-2b-ud-q4_k_xl.gguf`: Unsloth Qwen3.5-2B UD `Q4_K_XL` quantized GGUF for structured extraction through `llama-cpp-python`.
+- `qwen3.5-2b-gguf/Qwen3.5-2B-UD-Q4_K_XL.gguf`: Unsloth Qwen3.5-2B UD `Q4_K_XL` quantized GGUF for structured extraction through `llama-cpp-python`.
 - `paddleocr/`: optional local PaddleOCR model cache if you do not want PaddleOCR to manage downloads.
 - CLIP ViT-B/32 is loaded through Hugging Face Transformers when `RECEIPT_OCR_MODE=multi_model`; cache it locally if you want fully offline startup.
 
