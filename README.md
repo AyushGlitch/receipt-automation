@@ -352,6 +352,10 @@ For a printed-receipt benchmark workflow, see [SROIE_TEST_PLAN.md](SROIE_TEST_PL
 
 For PaddleOCR/PaddleX, Hugging Face, project output, and deep cleanup commands, see [MODEL_CACHE_CLEANUP.md](MODEL_CACHE_CLEANUP.md).
 
+## Ubuntu T4 GPU Setup
+
+For NVIDIA T4 GPU deployment on Ubuntu, see [UBUNTU_T4_GPU_SETUP.md](UBUNTU_T4_GPU_SETUP.md).
+
 ## Notes
 
 - `single_vl` mode ignores CLIP and PP-OCR routing and sends all receipts to PaddleOCR-VL.
